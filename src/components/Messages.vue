@@ -1,18 +1,18 @@
 <template>
   <div>
     <div class="flex flex-col overflow-y-auto mb-3">
-      <div v-for="tweet in tweets" :key="tweet.content" class="p-4 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-900 flex justify-end">
+      <div v-for="message in messages" :key="message.content" class="p-4 dark:text-gray-300 bg-gray-100 dark:bg-gray-900 hover:bg-gray-100 dark:hover:bg-gray-900 flex justify-end">
         
         <div class="-mt-3 mr-2">
           
-          <div class="py-2 bg-blue-800 text-white rounded-xl  py-3 px-6 rounded-bl-full rounded-t-full shadow-md type-bg" v-html="tweet.content" >
-            <!-- {{ tweet.content }} -->
+          <div class="py-2 bg-blue-800 text-white rounded-xl  py-3 px-6 rounded-bl-full rounded-t-full shadow-md type-bg" v-html="message.content" >
+           
           </div>
           <p class="text-sm text-dark ml-2 md:block hidden text-right fs"> {{ timeNow() }} </p>
           
         </div>
         <div class="flex-none mr-4">
-          <img :src="`${tweet.src}`" class="h-12 w-12 rounded-full flex-none"/>
+          <img :src="`${message.src}`" class="h-12 w-12 rounded-full flex-none"/>
         </div>
       </div>
     </div>
@@ -21,8 +21,8 @@
       <div class="grid grid-cols-5 gap-2 ">
         <div class="md:col-start-2 md:col-end-5 col-start-1 col-end-6 bg-gray-100 dark:bg-gray-900 pb-5 mb-0">
             <div>
-              <form v-on:submit.prevent = "addNewTweet" class="w-full px-4 relative">
-                <input type="text" v-model="tweet.content" placeholder="Type your message!" class="mt-2 pb-4 w-full focus:outline-none dark:bg-gray-800 dark:text-gray-300 bg-white border h-16 border-gray-200 dark:border-gray-600 rounded p-2 pt-0" />
+              <form v-on:submit.prevent = "addNewMessage" class="w-full px-4 relative">
+                <input type="text" v-model="message.content" placeholder="Type your message!" class="mt-2 pb-4 w-full focus:outline-none dark:bg-gray-800 dark:text-gray-300 bg-white border h-16 border-gray-200 dark:border-gray-600 rounded p-2 pt-0" />
                 <input type="submit" value="Submit" class="hidden" />
               </form>
           </div>
@@ -42,20 +42,22 @@ export default {
   name: 'Messages',
   data() {
     return {
-      tweets: [],
-      tweet: {content: ''}
+      messages: [],
+      message: {content: ''}
     }
   },
   methods: {
-    addNewTweet () {
+    addNewMessage () {
       let newTweet = {
-        content: this.tweet.content,
+        content: this.message.content,
         src: 'profile.jpg', 
         name: 'Riana Maia'
       };
-      this.tweets.push(newTweet)
-      // this.tweets.push({content: this.tweet.content})
-      this.tweet.content = ''
+      if(this.message.content){
+        this.messages.push(newTweet)
+        this.message.content = ''
+      }
+      
     },
     timeNow() {
       return new Date().getHours()+':'+new Date().getMinutes();
