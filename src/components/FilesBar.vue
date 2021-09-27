@@ -1,5 +1,5 @@
 <template>
-  <div class="md:block hidden h-full py-2 px-6 overflow-y-scroll dark:bg-gray-900 relative bg-gray-300">
+  <div class="md:block hidden h-full py-2 px-6 overflow-y-scroll dark:bg-gray-800 relative bg-gray-300">
     
     <div class="w-full rounded-lg  dark:text-gray-300">
       <div class="flex items-center p-3">

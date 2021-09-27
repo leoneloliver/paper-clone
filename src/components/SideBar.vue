@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-5 flex flex-col justify-between">
+    <div class="pt-5 flex flex-col justify-between dark:bg-black h-screen">
       <div>
 
         <ul class="m-0 p-0 flex justify-center mb-12 mt-5 xl:flex hidden">

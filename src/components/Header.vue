@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 grid grid-cols-5 gap-2">
+  <div class="p-4 grid grid-cols-5 gap-2 dark:bg-black">
       <div class="flex justify-center xl:col-span-1 col-span-2">
         <img class="max-w-xs object-right logo" src="paper_logo.png" />
 
