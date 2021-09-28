@@ -1,10 +1,10 @@
 <template>
   <div class="p-4 grid grid-cols-5 gap-2 dark:bg-black">
-      <div class="flex justify-center xl:col-span-1 col-span-2">
+      <div class="flex justify-center md:col-span-1 col-span-2">
         <img class="max-w-xs object-right logo" src="paper_logo.png" />
 
       </div>
-      <div class="xl:col-span-3 col-span-3">
+      <div class="col-span-3">
           <ul class="m-0 p-0">
               <li class="inline-block">
                   <a href="#" class="text-gray-300 hover:text-white md:mr-12 mr-5 text-center block">
