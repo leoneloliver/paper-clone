@@ -56,18 +56,22 @@ export default {
     darkMode () {
       document.querySelector('html').classList.toggle('dark');
       this.darkTheme = !this.darkTheme;
+    },
+    timeNow() {
+      return ((new Date().getHours()+ 11) % 12 + 1)+':'+new Date().getMinutes()+':'+new Date().getSeconds();
     }
   },
   mounted() {
     let newComment = {
-        src: 'kevin.jpg', name: 'Kevin Doh', time: '5 sec', text: 'Hi how can I help you?'
+        src: 'kevin.jpg', name: 'Kevin Doh', time: this.timeNow(), text: 'Hi how can I help you?'
     };
     const v = this;
     setTimeout(function(){ 
       v.tutoring.push(newComment);
       // document.querySelector('#tutor-profile').classList.add('hidden')
       
-    }, 5000);  
+    }, 5000);
+      
   }
     
 }

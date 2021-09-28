@@ -8,7 +8,7 @@
           <div class="py-2 bg-blue-800 text-white rounded-xl  py-3 px-6 rounded-bl-full rounded-t-full shadow-md type-bg" v-html="message.content" >
            
           </div>
-          <p class="text-sm text-dark ml-2 md:block hidden text-right fs"> {{ timeNow() }} </p>
+          <p class="text-sm text-dark ml-2 md:block hidden text-right fs"> {{ message.time }} </p>
           
         </div>
         <div class="flex-none mr-4">
@@ -51,7 +51,8 @@ export default {
       let newTweet = {
         content: this.message.content,
         src: 'profile.jpg', 
-        name: 'Riana Maia'
+        name: 'Riana Maia',
+        time: this.timeNow()
       };
       if(this.message.content){
         this.messages.push(newTweet)
@@ -60,7 +61,7 @@ export default {
       
     },
     timeNow() {
-      return new Date().getHours()+':'+new Date().getMinutes();
+      return ((new Date().getHours()+ 11) % 12 + 1)+':'+new Date().getMinutes()+':'+new Date().getSeconds();
     }
   }
 }
