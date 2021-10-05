@@ -67,16 +67,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .moon{
   background: #9da4b0;
   border-radius: 500px;
-  padding: 3px 7px;
+  padding: 5px 7px;
 }
 .sun{
   background: #333;
   border-radius: 500px;
-  padding: 3px 6px;
+  padding: 5px 6px;
 }
 
 .type-bg{

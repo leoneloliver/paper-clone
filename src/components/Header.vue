@@ -7,25 +7,25 @@
       <div class="col-span-3">
           <ul class="m-0 p-0">
               <li class="inline-block">
-                  <a href="#" class="text-gray-300 hover:text-white md:mr-12 mr-5 text-center block">
-                      <i class="fa fa-bar-chart" aria-hidden="true"></i><br>
-                      Dashboard
-                      <hr class="border-transparent">
-                  </a>
+                    <a class="text-gray-300 hover:text-white md:mr-12 mr-5 text-center block">
+                        <i class="fa fa-bar-chart" aria-hidden="true"></i><br>
+                        Dashboard
+                        <hr class="border-transparent">
+                    </a>
               </li>
-              <li class="inline-block selected">
-                  <a href="#" class="text-gray-300 hover:text-white  mr-12 text-center block">
-                      <i class="fa fa-users" aria-hidden="true"></i><br>
-                      chart
-                      <hr class="border-red">
-                  </a>
+              <li class="inline-block">
+                    <router-link to="/" class="text-gray-300 hover:text-white  mr-12 text-center block">
+                        <i class="fa fa-users" aria-hidden="true"></i><br>
+                        chart
+                        <hr class="border-transparent">
+                    </router-link>
               </li>
               <li class="md:inline-block hidden">
-                  <router-link to="/" class="text-gray-300 hover:text-white  mr-12 text-center block">
-                      <i class="fa fa-file-text-o" aria-hidden="true"></i><br>
-                      Essay Review
-                      <hr class="border-transparent">
-                  </router-link>
+                    <router-link to="/essay" class="text-gray-300 hover:text-white  mr-12 text-center block">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i><br>
+                        Essay Review
+                        <hr class="border-transparent">
+                    </router-link>
               </li>
              
           </ul>
@@ -48,12 +48,6 @@ export default {
 </script>
 
 <style scoped>
-.selected hr{
-    border-top-width: 2px;
-    width: 20px;
-    margin: auto;
-    border-color: #34d399;
-}
 .logo{
     max-width: 180px;
 }
@@ -62,6 +56,15 @@ export default {
         max-width: 90%;
         height: fit-content;
     }
+}
+.border-transparent{
+    border-top-width: 2px;
+}
+.router-link-exact-active hr{
+    border-top-width: 2px;
+    width: 20px;
+    margin: auto;
+    border-color: #34d399 !important;
 }
 
 </style>

@@ -63,15 +63,14 @@ export default {
   },
   mounted() {
     let newComment = {
-        src: 'kevin.jpg', name: 'Kevin Doh', time: this.timeNow(), text: 'Hi how can I help you?'
-    };
-    const v = this;
-    setTimeout(function(){ 
-      v.tutoring.push(newComment);
-      // document.querySelector('#tutor-profile').classList.add('hidden')
-      
-    }, 5000);
-      
+          src: 'kevin.jpg', name: 'Kevin Doh', time: this.timeNow(), text: 'Hi how can I help you?'
+      };
+      const v = this;
+      setTimeout(function(){ 
+        v.tutoring.push(newComment);
+        // document.querySelector('#tutor-profile').classList.add('hidden')
+        
+      }, 5000);
   }
     
 }
@@ -81,12 +80,12 @@ export default {
 .moon{
   background: #9da4b0;
   border-radius: 500px;
-  padding: 3px 7px;
+  padding: 5px 7px;
 }
 .sun{
   background: #333;
   border-radius: 500px;
-  padding: 3px 6px;
+  padding: 5px 6px;
 }
 
 </style>

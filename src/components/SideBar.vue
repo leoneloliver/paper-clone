@@ -18,14 +18,14 @@
           </ul>
         
         <div class="mt-2 ml-6 text-gray-200 mb-4">Tutors</div>
-        <button class="text-white bg-blue-900 dark:bg-gray-900 font-semibold focus:outline-none w-full p-3 hover:bg-blue-800  flex type-bg">
+        <router-link to="/" class="text-white bg-blue-900 dark:bg-gray-900 font-semibold focus:outline-none w-full p-3 hover:bg-blue-800  flex type-bg">
           <img src="kevin.jpg" class="h-12 w-12 rounded-full border-2 border-green-500 xl:block hidden"/>
           <div class="text-left">
             <p class="mt-2 ml-3">Kevin Smith</p>
             <p class="-mt-1 ml-3 font-thin text-xs">Your Tutor today</p>
           </div>
           
-        </button>
+        </router-link>
 
         <button class="text-white font-semibold focus:outline-none w-full p-3 flex mt-12 flex justify-between">
          
@@ -44,7 +44,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .type-bg{
   background: #0a1aec;
 }
