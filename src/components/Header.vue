@@ -6,7 +6,7 @@
       </div>
       <div class="col-span-3">
           <ul class="m-0 p-0">
-              <li class="inline-block">
+              <li class="md:inline-block hidden">
                     <a class="text-gray-300 hover:text-white md:mr-12 mr-5 text-center block">
                         <i class="fa fa-bar-chart" aria-hidden="true"></i><br>
                         Dashboard
@@ -14,16 +14,16 @@
                     </a>
               </li>
               <li class="inline-block">
-                    <router-link to="/" class="text-gray-300 hover:text-white  mr-12 text-center block">
+                    <router-link to="/" class="text-gray-300 hover:text-white mr-12 text-center ml-5 md:ml-0 block">
                         <i class="fa fa-users" aria-hidden="true"></i><br>
                         chart
                         <hr class="border-transparent">
                     </router-link>
               </li>
-              <li class="md:inline-block hidden">
-                    <router-link to="/essay" class="text-gray-300 hover:text-white  mr-12 text-center block">
+              <li class="inline-block">
+                    <router-link to="/essay" class="text-gray-300 hover:text-white mr-12 text-center block">
                         <i class="fa fa-file-text-o" aria-hidden="true"></i><br>
-                        Essay Review
+                        Essay <span class="md:inline-block hidden">Review</span>
                         <hr class="border-transparent">
                     </router-link>
               </li>
