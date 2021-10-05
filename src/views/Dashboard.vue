@@ -7,7 +7,7 @@
 
       <div class="md:col-span-3 col-span-9 bg-gray-100 dark:bg-gray-900 gap-4">
         <router-link to="/chat">    
-            <div class="md:mt-24 md:m-5 md:ml-24 m-8 text-center border-2 border-indigo-600 p-12 md:h-1/3 h-auto dark:hover:bg-black hover:bg-gray-200">
+            <div class="shadow-md md:mt-24 md:m-5 md:ml-24 m-8 text-center border-2 border-indigo-600 p-12 md:h-1/3 h-auto dark:hover:bg-black hover:bg-gray-200">
                 <i class="fa fa-graduation-cap text-blue-900 dark:text-white " aria-hidden="true"></i>
                 <h2 class="text-gray-500 dark:text-white font-semibold">Mathematics</h2>
                 <p class="text-gray-500 dark:text-white text-sm">Mathematics includes the study of such topics as quantity (number theory), structure (algebra) ...</p>
@@ -16,7 +16,7 @@
       </div>
       <div class="md:col-span-3 col-span-9 bg-gray-100 dark:bg-gray-900 gap-4">
         <router-link to="/chat">    
-            <div class="md:mt-24 md:m-5 md:mx-12 m-8 text-center border-2 border-indigo-600 p-12 md:h-1/3 h-auto dark:hover:bg-black hover:bg-gray-200">
+            <div class="shadow-md md:mt-24 md:m-5 md:mx-12 m-8 text-center border-2 border-indigo-600 p-12 md:h-1/3 h-auto dark:hover:bg-black hover:bg-gray-200">
                 <i class="fa fa-code text-blue-900 dark:text-white " aria-hidden="true"></i>
                 <h2 class="text-gray-500 dark:text-white font-semibold">Coding</h2>
                 <p class="text-gray-500 dark:text-white text-sm">Coding is basically the computer language used to develop apps, websites, and software ...</p>
@@ -25,7 +25,7 @@
       </div>
       <div class="md:col-span-3 col-span-9 bg-gray-100 dark:bg-gray-900 gap-4">
           <router-link to="/chat">    
-            <div class="md:mt-24 md:m-5 md:mr-24 m-8 text-center border-2 border-indigo-600 p-12 md:h-1/3 h-auto dark:hover:bg-black hover:bg-gray-200">
+            <div class="shadow-md md:mt-24 md:m-5 md:mr-24 m-8 text-center border-2 border-indigo-600 p-12 md:h-1/3 h-auto dark:hover:bg-black hover:bg-gray-200">
                 <i class="fa fa-line-chart text-blue-900 dark:text-white " aria-hidden="true"></i>
                 <h2 class="text-gray-500 dark:text-white font-semibold">Statistics</h2>
                 <p class="text-gray-500 dark:text-white text-sm">Statistics deals with every aspect of data, including the planning of data collection  ...</p>
