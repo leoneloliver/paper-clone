@@ -58,7 +58,6 @@ export default {
         this.messages.push(newTweet)
         this.message.content = ''
       }
-      
     },
     timeNow() {
       return ((new Date().getHours()+ 11) % 12 + 1)+':'+new Date().getMinutes()+':'+new Date().getSeconds();
