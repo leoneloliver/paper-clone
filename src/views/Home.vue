@@ -28,11 +28,11 @@
 
 <script>
 
-import Sidebar from './SideBar.vue'
-import Messages from './Messages.vue'
-import FilesBar from './FilesBar.vue'
-import Tutoring from './Tutoring.vue'
-import Header from './Header.vue'
+import Sidebar from '../components/SideBar.vue'
+import Messages from '../components/Messages.vue'
+import FilesBar from '../components/FilesBar.vue'
+import Tutoring from '../components/Tutoring.vue'
+import Header from '../components/Header.vue'
 
 export default {
   name: 'Home',

@@ -21,12 +21,13 @@
                   </a>
               </li>
               <li class="md:inline-block hidden">
-                  <a href="#" class="text-gray-300 hover:text-white  mr-12 text-center block">
+                  <router-link to="/" class="text-gray-300 hover:text-white  mr-12 text-center block">
                       <i class="fa fa-file-text-o" aria-hidden="true"></i><br>
                       Essay Review
                       <hr class="border-transparent">
-                  </a>
+                  </router-link>
               </li>
+             
           </ul>
       </div>
       <div class="flex justify-center text-white md:flex hidden">

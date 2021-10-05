@@ -35,7 +35,7 @@
               <div class="py-2 bg-white text-gray-800 rounded-xl py-3 px-6 rounded-br-full rounded-t-full shadow-md " v-html="tutor.text" >
                 
               </div>
-              <p class="text-sm text-dark ml-2 md:block hidden fs"> {{tutor.time}} </p>
+              <p class="text-sm text-dark ml-2 md:block hidden fs text-left"> {{tutor.time}} </p>
               
               
           </div>
