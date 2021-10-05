@@ -7,11 +7,11 @@
       <div class="col-span-3">
           <ul class="m-0 p-0">
               <li class="md:inline-block hidden">
-                    <a class="text-gray-300 hover:text-white md:mr-12 mr-5 text-center block">
+                    <router-link to="/dashboard"  class="text-gray-300 hover:text-white md:mr-12 mr-5 text-center block">
                         <i class="fa fa-bar-chart" aria-hidden="true"></i><br>
                         Dashboard
                         <hr class="border-transparent">
-                    </a>
+                    </router-link>
               </li>
               <li class="inline-block">
                     <router-link to="/" class="text-gray-300 hover:text-white mr-12 text-center ml-5 md:ml-0 block">
