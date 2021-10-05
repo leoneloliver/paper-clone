@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Chat from '../views/Chat.vue'
 import Essay from '../views/Essay'
 import NotFound from '../views/404'
 import Dashboard from '../views/Dashboard'
@@ -10,8 +10,8 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'Dashboard',
+    component: Dashboard
   },
   {
     path: '/essay',
@@ -19,9 +19,9 @@ const routes = [
     component: Essay
   },
   {
-    path: '/dashboard',
-    name: 'Dashboard',
-    component: Dashboard
+    path: '/chat',
+    name: 'Chat',
+    component: Chat
   },
   {
     path: '*',
