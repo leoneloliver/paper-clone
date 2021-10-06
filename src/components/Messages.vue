@@ -43,11 +43,14 @@ export default {
   data() {
     return {
       messages: [],
-      message: {content: ''}
+      message: {content: ''},
+      message_count: 0
     }
   },
   methods: {
     addNewMessage () {
+      this.message_count = this.messages.length;
+      this.emitToParent();
       let newTweet = {
         content: this.message.content,
         src: 'profile.jpg', 
@@ -61,6 +64,9 @@ export default {
     },
     timeNow() {
       return ((new Date().getHours()+ 11) % 12 + 1)+':'+new Date().getMinutes()+':'+new Date().getSeconds();
+    },
+    emitToParent () {
+      this.$emit('childToParent', this.message_count)
     }
   }
 }
