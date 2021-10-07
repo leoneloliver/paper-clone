@@ -10,7 +10,7 @@
         <!-- end sidebr -->
       </div>
       <div class="md:col-span-3 col-span-5 relative bg-gray-100 dark:bg-gray-900 h-screen">
-        <Tutoring  :class="[message_count >= 2 ? 'hide-tutor-profile' : '']"/>
+        <Tutoring  :class="[message_count >= 2 ? 'hide-tutor-profile' : '']" />
         
         <!-- tweets -->
         <Messages @childToParent="updateMessageLength" />

@@ -4,7 +4,6 @@
     <div class="w-full rounded-lg  dark:text-gray-300">
       <div class="flex items-center p-3">
         <p class="text-lg font-bold text-center w-full">Shared Files</p>
-        
       </div>
       <div class="text-center h-full align-middle pt-12">
         
